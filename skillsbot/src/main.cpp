@@ -40,7 +40,9 @@ void usercontrol() {
     
     RightBackMotor.spin(forward, Controller1.Axis3.position()+Controller1.Axis4.position()-Controller1.Axis1.position(), vex::velocityUnits::pct);
 
+    // INTAKE
     RightIntake.spin(forward, Controller1.ButtonR1.pressing()*100-Controller1.ButtonR2.pressing()*100, vex::velocityUnits::pct );
+
     LeftIntake.spin(forward, Controller1.ButtonL1.pressing()*100-Controller1.ButtonL2.pressing()*100, vex::velocityUnits::pct );
 
     
